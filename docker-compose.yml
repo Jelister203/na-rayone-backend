@@ -9,9 +9,12 @@ services:
     image: postgres
     volumes:
       - db_value:/var/lib/postgresql/data/
+    env_file:
+      - ./.env
+
 
   backend:
-    build: ../backend
+    build: ./
     volumes:
       - ./app:/usr/src/app
     environment:

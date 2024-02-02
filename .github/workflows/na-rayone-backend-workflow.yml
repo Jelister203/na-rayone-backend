@@ -26,9 +26,7 @@ jobs:
           installer-parallel: true
   
       - name: Install dependencies
-        working-directory: ./backend
         run: poetry install --no-interaction --no-root
       
       - name: Tests with ruff.
-        working-directory: ./backend
         run: poetry run ruff check .
