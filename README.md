@@ -1,4 +1,4 @@
-# Проект "На районе". Бэкэнд. Микросервис "Шаблон на FastAPI".![FastAPI-app Template Workflow Tests](https://github.com/Jelister203/foodgram-project-react/actions/workflows/foodgram_workflow.yml/badge.svg)
+# Проект "На районе". Бэкэнд. Микросервис "Шаблон на FastAPI".![FastAPI-app Template Workflow Tests](https://github.com/Jelister203/na-rayone-backend/actions/workflows/na-rayone-backend-workflow.yml/badge.svg)
 
 Данный микросервис отвечает за следующие эндпоинты:
 - Смотри в [таблице](https://miro.com/app/board/uXjVN0ClXug=/). При желании, распиши.
