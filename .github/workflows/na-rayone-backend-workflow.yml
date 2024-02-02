@@ -1,4 +1,4 @@
-name: FastAPI-app workflow
+name: FastAPI-app Template Workflow
 
 on:
   push:
@@ -30,4 +30,5 @@ jobs:
         run: poetry install --no-interaction --no-root
       
       - name: Tests with ruff.
+        working-directory: ./backend
         run: poetry run ruff check .
