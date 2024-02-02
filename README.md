@@ -25,6 +25,8 @@ root
 │       │
 │       ├───Dockerfile
 │       │
+│       ├───pyproject.toml
+│       │
 │       └───poetry.lock
 │
 ├───infras
