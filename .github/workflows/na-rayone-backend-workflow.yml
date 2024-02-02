@@ -1,0 +1,32 @@
+name: FastAPI-app workflow
+
+on:
+  push:
+    paths-ignore:
+      - '**/README.md'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up python
+        id: setup-python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          installer-parallel: true
+  
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
+      
+      - name: Tests with ruff.
+        run: poetry run ruff check .

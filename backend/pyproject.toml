@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "na-rayone-backend"
+version = "0.1.0"
+description = ""
+authors = ["Jelister <stiffler203@gmail.com>"]
+readme = "../README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.0"
+SQLAlchemy = "^1.4"
+ruff = "^0.1.15"
+databases = "^0.8.0"
+asyncpg = "^0.29.0"
+psycopg2 = "^2.9.9"
+gunicorn = "^21.2.0"
+uvicorn = "^0.27.0.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
