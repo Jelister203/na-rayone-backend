@@ -1,49 +1,47 @@
 # Проект "На районе". Бэкэнд. Микросервис "Шаблон на FastAPI".![FastAPI-app Template Workflow Tests](https://github.com/Jelister203/na-rayone-backend/actions/workflows/na-rayone-backend-workflow.yml/badge.svg)
 
-Данный микросервис отвечает за следующие эндпоинты:
-- Смотри в [таблице](https://miro.com/app/board/uXjVN0ClXug=/). При желании, распиши.
 # Дерево проекта
 ```
 root
 ├───.github
 │   └───workflows
 │       └───na-rayone-backend-workflow.yml 
-├───backend
-│   ├───app
-│   │   ├───api
-│   │   │   ├───__init__.py
-│   │   │   │
-│   │   │   ├───db.py
-│   │   │   │
-│   │   │   ├───models.py
-│   │   │   │
-│   │   │   ├───routers.py
-│   │   │   │
-│   │   │   └───schemas.py
-│   │   │
+│
+├───app
+│   ├───api
 │   │   ├───__init__.py
 │   │   │
-│   │   └───main.py
-│   │  
-│   ├───Dockerfile
+│   │   ├───db.py
+│   │   │
+│   │   ├───models.py
+│   │   │
+│   │   ├───routers.py
+│   │   │
+│   │   └───schemas.py
 │   │
-│   ├───pyproject.toml
+│   ├───__init__.py
 │   │
-│   └───poetry.lock
+│   └───main.py
+│  
+├───Dockerfile
 │
-├───infras
-│   ├───docker-compose.yml
-│   │
-│   └───nginx.conf
+├───pyproject.toml
+│
+├───poetry.lock
+│
+├───docker-compose.yml
+│
+├───nginx.conf
 │
 ├───README.md
 │
-├───.gitignore
-│
-└───LICENSE
+└───.gitignore
 ```
 ## Важно.
 Для использования этого шаблона, необходимо сделать его форк, чтобы его копия появилась в твоём личном списке репозиториев. Не клонируйте этот репозиторий на свою локальную машину, если не хотите работать с ветками, pull request'ами больше, чем необходимо.
+
+## Базы данных.
+Базы данных должны создаваться не вручную, а автоматически. В Данном шаблоне это условие учтено, см. файл models.py.
 
 # Шпаргалки по технологиям.
 

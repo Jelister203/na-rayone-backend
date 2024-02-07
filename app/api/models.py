@@ -2,7 +2,9 @@ from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
-
+"""
+Описываем таблицу, которую хотим создать.
+"""
 class User(Base):
     __tablename__ = "users"
 
@@ -12,7 +14,7 @@ class User(Base):
 
 
 """
-Вот это - полный пиздец. Без этих строк, таблицы в бд не создаются.
+Благодаря этим последним строчкам, таблица и бд создаются автоматически.
 """
 
 SQLALCHEMY_DATABASE_URL = "postgresql://postgres:ebwerv@db:5432/postgres"
